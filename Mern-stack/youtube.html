@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-left">
+           <span class="material-symbols-outlined">menu</span> 
+            <img src="data:image/png;base64,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">
+            </div>
+        <div class="header-search">
+            <form action="">
+                <input type="text" placeholder="search">
+                <button>
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </form>
+            <div class="search-mic">
+                <span class="material-symbols-outlined">mic</span>
+            </div>
+        </div>
+        <div class="header-icons">
+            <span class="material-symbols-outlined">add</span>
+            <input type="text" placeholder="create">
+            <span class="material-symbols-outlined">
+notifications
+</span>
+<span class="material-symbols-outlined">
+account_circle
+</span>
+        </div>
+    </div>
+
+    <!-- header end -->
+
+    <!-- hero section -->
+     <div class="mainBody">
+        <div class="sidebar">
+            <div class="sidebar-categories">
+                <div class="sidebar-category">
+                    <span class="material-symbols-outlined">Home</span>
+                    <span>Home</span>
+                </div>
+                 <div class="sidebar-category">
+                    <span class="material-symbols-outlined">local_fire_department</span>
+                    <span>Trending</span>
+                </div>
+                 <div class="sidebar-category">
+                    <span class="material-symbols-outlined">subscriptions</span>
+                    <span>Subscription</span>
+                </div>
+            </div>
+            <hr>
+
+              <div class="sidebar-categories">
+                <div class="sidebar-category">
+                  <span class="material-symbols-outlined">switch_account</span>
+                   <span>Your channel</span>
+                </div>
+                <div class="sidebar-category">
+                   <span class="material-symbols-outlined">history</span>
+                   <span>History</span>
+                </div>
+                 <div class="sidebar-category">
+                    <span class="material-symbols-outlined">playlist_play</span>
+                    <span>Playlist</span>
+                </div>
+                 <div class="sidebar-category">
+                    <span class="material-symbols-outlined">video_library</span>
+                    <span>Your videos</span>
+                </div>
+                <div class="sidebar-category">
+                    <span class="material-symbols-outlined">thumb_up</span>
+                    <span>Liked Videos</span>
+                </div>
+                 <div class="sidebar-category">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <span>Watch Later</span>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <!-- Sidebar ends -->
+
+        <div class="videos">
+            <div class="recommand">
+                <span>All</span>
+                 <span>Live</span>
+                  <span>Music</span>
+                   <span>Podcast</span>
+                    <span>Web development</span>
+                     <span>Coding</span>
+                     <span>Data Structure</span>
+                     <span>Web Series</span>
+                     
+            </div>
+            <br><br>
+            <div class="video-container">
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/OsALYgEzJu8?si=IaJfj7RSOXokRDKv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/8QYQPyc5L68?si=Br7M_5qPxLH6F0lN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/H0HBlvgR3-k?si=Qt8xshbL1Q3T0RJr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/mvosjo_LZwg?si=yLP7kjqJ2XkEr8QD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/Rx1qEUH0fiU?si=BXjwyHGtYdT9Ocbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="480" height="315" src="https://www.youtube.com/embed/i0yJtG3_YD0?si=8AEMGvJ7cR93xz4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html> 
