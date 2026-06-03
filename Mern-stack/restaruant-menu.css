@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root{
+    --gold: #d4af37;
+    --dark: #1a1a1a;
+    --cream: #f5f0e6;
+    --radius: 10px;
+}
+
+body{
+    display: flex;              /* Parent Property */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+/* Parent Container */
+.main-container{
+    width: 450px;
+    background-color: var(--dark);
+    color: var(--gold);
+    padding: 20px;
+    border-radius: var(--radius);
+
+    display: flex;              /* Parent Property */
+    flex-direction: column;
+    gap: 15px;
+
+    position: relative;         /* Position Property */
+}
+
+.main-container h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Child Elements */
+.starter,
+.main-course,
+.desserts{
+    background-color: var(--cream);
+    color: var(--gold);
+    padding: 15px;
+    border-radius: var(--radius);
+
+    display: flex;              /* Parent Property for p tags */
+    flex-direction: column;
+    gap: 5px;
+
+    position: relative;
+}
+
+/* Child Property */
+.starter p,
+.main-course p,
+.desserts p{
+    margin-left: 10px;
+}
+
+/* Position Example */
+.starter::before{
+    content: "⭐";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
