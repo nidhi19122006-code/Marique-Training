@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMyShow: Movie Tickets, plays, Sports, Events & Cinemas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      rel="shortcut icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAwFBMVEXXGSH////u7+/t7u7YAAD5+fn09fXx8vL29/f8/Pzjk5fXExzgY2bt5ufjv8H35+jbPEHutLbXAA7XERnYAA3aIy3XChXYAAb3///u9PTaGiXji4/bTVHZJCr69vby2tzlqKvw0tTcb3TaWV377e7fgIPbNDrimp3wxsjceX3ouLvidHj24OHoycvbQkbn1dbjlprXLTLeXWPbSE7qvb7oztDnm5/yzc/eaG3bio3jrq/rqqzwurzurrDnkJXpmp50g9JoAAAVoUlEQVR4nO1de3+iOhPmEgVL0S7QAGrVatXa9dLW9tR1z3vO9/9WL8gtgUyIFqnd35n9Z4uB4SGTzGRmMpHkhFqqEpHaSK8pCWnpJT1t1kqvpZea6SUtuVNNLzUqYKAfz0D6D+F/CP9D+B/C74JQ9039T0boN1d9ZGrfGaHKf4EfOxejaYNCqBZe4BMMWAiLDACErYQaWkJ6eq2ZXGqml/S0WSO8qSEPfqwRliTJfdRZd2oMBg1xBuWvxmegaZKaUPYVm+k14vsnRH5FVfG8Uf+AT5LwJPyKCRHf/2QGSnJJIbqJwyCTIJKBxBgJTZ6EEQg1b/nrNsYnSQYaEXJSlDCFeIHiGGIySN+NQHg0AyZCsReQ1d6La0gp4f6g9UchXP5CiMAXEJp6fxDCTu/OofFJku3eJ7d+e4QfP/P9dyBnkbT75gjfr7HFwBfK6T6W0+ILaJoizOCrET4ilwkvnGxmvsZ+Ac+cT72vQXi8uuohCGDQifMmQ10FamXaRdajIIMUYTX6sJGQ3kxIT68xLukPaxtGiA2zlXtaoyWbPSlQK/hF1kUYZHce2YyNoMQuTSaOrINb75wulCTrNfn+8Z1NebnA0bSE9pHNyWegq/BsxbBLVb5dqqpHry28ORehYdxHLxDd53v307tk2rVnHQEGX7962mIeQsmZNdIX0MNVFaFW3NfDVHvhCIdcfKEsPh1eQNV0vX3t0J/DGfqXj/A3V0gDwi/LoFnTG4wmKN/dTn9w8QgHr3whDWXxKmw32hbwhR385l08Qpa1RpONOt7vG8TUKdYsdHZcNMK3MiENZfFmy8YXduJVoNvZDFrDzbkRJkSqq7zBswMtNrIXOTYBWjYpdRVbLU358Se6iRAWDJ7MbGEYPCTCIoJAH6ZfkWHVZdZSK/7S5k2pkJaQu2MxaLT7yAo6OPiF0U2ZCDfSO7MOLkFwnBfDfxPpQi4ZzluBQevxGjnBb/ZtRz/d8qbs0ozBcWuL1tT6LEIJrwc6xeBhZCTTLhp7rD6scfWkzTgjTJTQ3CMYtEZrN1UrhvvmfynCxkpgJi0lPOvE7x6sqvYupX7wpPmlCD3e0lCc0OLQiZpuXt3m1SsapTy/REr7pQaNGMS2r/j6sNctmg+2NPxChP5HNQBDWWy9L+6Y5pHVOxdCtVRbqPreqQZhYLrumM46KXSd38MINS25doS2SKMZrNhIi4hwaJp+/XldEZMFSwN+lQme2XsENvH89leTFXwpICDDNsdYbV651V0J+ie9aLUp3vL5BmHDTLtT2Gqjh9qhZyHL+0clM2kp2V1Tywmi1uxEw9aZFES4yrXFtB6EEnr2cgjN6W0cA7I+zohw+VKLkAYjsXuIf6QIhwuU+tjxbHA+hPc1dWHQUf1wgowRDn92yRhe5AY6D8JFVbqilAy08iOErbdwVUWSfbc8G8KXivS9ALn9ByX05a9e3QJT9PNcCDe1CWkI40r2zL9vEEMBG87wZIR8ffhXnQgN2xxtHbbQuLtwgDL1oRIaM3l9qAtS47qCpaE42QbLGRkR+ksG3tEbvm4auYui0TVtWN8oPBBHM9ldRStG15TmYDk20HUegejawnuuU0hLCPUaBctb9x8nyDWMgzY5ZfXkrWvuQy7hjyaN0O+0o8wsCW8HJyGUFaMmg0aI3GuPROg1f6zTaSkYpSchrHUmLSUD7bNX8x/mM9LHbt+fJKUVuBGrJOPmIXk1b76mp11ncQrCh0/7uism9Ct6seVcKsRI0Jt+PMLhRQmpFJoEoWVjLl4Yq3I8oRCK6cOfl4ZQQlN5OAWcPWjuEfqwJP80coB4N5ekKw5k2NfdQmZdTDZqZr4eIcvbf7useSYizju5iwyBGEJ+hskFkv1xHMJBRb7u+shZH4VQq3VpWA0lzg4hhKq3/34I8ezhiD70X2vz0FRHaCeOUKvNjVglGfZSGKH/DYVUCjuxlUOYpTnkEDbG9bkRMXIdMW+J7bgu5soWakcIy622Rt40cl10MrlAhviBrO5iPrraFj2IBcLu9mo0Wtzxvr11Ywpa3rmUWUv6+dw+lfa7voSgT4/6m1B8zKfbMhMK3z0dnPvLCQcivjE1MYS01Y2uN16akn48efr9qM82mK1JEgndlJjBtrSKW+pjOMEHTX2xPhxsyYHh7ganw4upsdl1ixAMlMYG5RF/bgsdFTGZEjhsUVsXQ3hPfb2XzqcBBuStZoV1K+4Tv3OnG9shNl/9Aj+GYwqugKlHuD+rABhimONcNyZ21oG4oUp3TLRsQy2t3UAQITUm0HNFCGV5JdGzBHoTee9DyxH5GDDPc+6LITSpWQFdVYZQNukVC+k+kx/WHKVyNyRaPgHfwjDetRihqoaxjFy2iRpdlfNuxCoRyps7UitYpOx5O1gNWBNyLl8AmsXaBjPpAWHZdpRX6gmVIpQ3M6IXbbdB/AR1TfgO/5DPgOZSNJcjBCXRNWVIP6BahDKVrooeiV9MMLPFQO9UO6CVHYlyabaJnvuWFSOUF8TjUY/8BYyT2Ddks38AhPYk0tulawsvZ3VXjbBDbBOz1w/ELyPIWKE+RGMHfIikVRlCTZE4Unq/uGIROScO6Ca/yVkwJI+0XrKMtoA+AIAS+pv8QtDS1V2JIdTzmw8ohD+QE60XDv8cZB3+oQnRxDw0iX4O/4f7f7eIn+WWR9g2weSQUbPPnkLsG41oBW2OMAxPDKHfy8lKDiHr4fiaQpjj7KAFKYtUDotFfhto34P7SjaC/CvJJsFShIWAjABCi4cwfMSWgkiYvQYiuwdw8FGGgQfqimTxUYawEJCpAKGExqSgmv3sI6L/ET8MmD57wyG/D7Q5wnhZMhEW9WHBAP6slEYP+U20IBWGS2JvMc0aZ0d+HijvHC2SVoE+5GXQeoXdlJUgtLHHforR7ZQ9npqNBhNASN0rP8ugTa3sYha0timmXFUgpblOJMdbOnxC6twyxBR/EC2GoM5U4m3CJWsLv6h1q0FoLYgmGmGfUdqclf6Bb8juhzJg7Ltkz0oJQobBUA1CmxpMBEI8I39gAKBX4FDACE2T9HY+Qm1TTEyqZBxKxpocb11iMFmkEDJ26FBmj3kHGDS47Yv0oeox/EHV9KFxQyK8JRDSE8lNfiIxZqSu+B8gpLhPJi7yEDIMhnMgJNdJeEcuEgspLpkWCAla/KJ/PCGEGmsuO3cfSojspMf8J3ZIq3sAbaRDq9Jsk8Mw9f9m2SPVjEMKIbWnlvK4abmBZmCF+BUqX2HPdLFsE/2KYVOcAyGmPM7UZLmm5RDPyB8hj2Mwk1LZl+kNeattwKphcnYpte9M4qfcXEfPQ5AXAO19sT0zTE/JuWea4HbSW7Ok+9AhF9DDOzZA6e7eF8tkZ1q1Z+9D2qwZTEiIdp+MmUDlK/CkqQgh9JiBq3OMwy6F0LglYVyR96Mr0mS7hoR0rovtRvhgZ4ydoQ/dnCtoQ/z2SCEkhdR02QaN4W40MYTs1z+/lNILD49QJQYiuxAKwOGJ6I6SCVMIzj/TSC55v0y43MnwG5wtiZ51MYQDdij6/ONQMqjAC2F9U8EpEwrd2E++GELATXcOhDkppc2aLJfHuF0S1x8hIZ2peSlNwjGthhaHY8IyqPJP9vK5Bimlg1CtdI2KKKP8F7C8d8degKDRSlA1m2yrTekAed01zDTBjEL8mM0olCNOhnIZIj9IeYVWHUqDOrtdmr1lTEqK0Cx9buhGPKxNSnP1VRlK4jgHQqOAkAoQxj/bBnnxXwBh7I8sRwjmQtQhpRKmvOKxWeNQTiooROxG820pwuYSisDWMdMcdr1k9BFpRMoiH3aB94v365ci9KG4Yz19yEpawGvSXH0CuhDH0dPyPoSs2rOMw2J0Bb8QP3sHxRUsawkChfRKDKE+hNx0Z+lDxphHep7NIZUyJSjIj5YMhAx9KMObD+qRUtqsaQZ4DER6aKC4aBK8Byq0ZmVQ5T6Y/VjPTJOTyS2W8I68AE0TwQJSpEKrqqlwDZM67NKwAZUguHfpuWcABMAl9K4VS8AyLG8d8iXXh5D23t93DYP09kO6zHCTOs0lawt9wclKrUdK6YfofdQnrW5omnB2viKEkLf5oKaZRrK7RINgtUul8Uwgb35bDKG+4lQOrElb5Lw1G8pDMwTyxIOlsyaE0OfW665F40s5b83gVijkdD1QRBBqPq9yYF1SGowpYuS12qTJBm26RiNfCKH/wdsKUNdMk2zqYdADUFDCQAnAktomOpwafiaEzD6kl8EkQSEn3M8KuXIrtDIDMscg/Fx0LSWH8h0SBObQEGEbruX9wOvCerwYUZsX0vomCKqY7rxlN3ArtPI3c9QnpfSSNyOodqO9NQUrQ265e45qm2lywcKMoJATWnhiCMGUVGGEldilUphIytp/1GJHG0KDRhdD+Mbfa1iDVz/jRSeiRjQAdvfZXVUTQzj9NMLjpRTeT1AkaJeCNdZVIYSDLn/Lb40zjeRQQaiYgGiDhJ98sQqtZaWQ6+xD+7a4T64zA4R01tGEKrSW1jCpcxxKLpkfFBGUFIwnnlCFVsUvKw9R41waKoACQmjx64YecYEKrX7pyQc16sPQ+i7oi0KMI255CNsI1E0sOSXnTAjBPqSXwfDjwu02AzGEWmkNk/rs0gK3kKAeiDZ+liNsQp/ovAjh0zBwP2d9Q7uconI05QgFCu3UK6VS954CCCV64egEpnKEHvSJzouQU0ObcgTDBo0bxRZLESpgVO68CDl9iNcySdDSMN5zWYrQ5+xMPQJhdRpfygWhoN427h5ihEx9mJUyLbO6BRF+Nq+NaojIvG7IQ+PsNE5p2Sy61uQNiHMi5EipQ4WcoKRgd+THCBJiZ5vo/GP/zoeQN9OQtQXAXU54E/m6y1ZPusgBJFR+6w+mGWyT2+XZYSJjRjpDeadDkSGne8DqtgKrWwjhg0hRNio/kK0+qQ4C0s/I4BnnxAVa44NZTKN4Ei1BqK3EaiVlX781BqpRE4seoLCrS8R4OYOD3r/OqPgStXqPAzIlCD0ww4R+XLZb4AGIARFKbAD4jQw3CyZB6U1Szu+tgcF7UxFBqHq3YpUDU+9JAyzvg16TVQ/ofLXSvV1vMCva28ba4BKS2/OEEDZFTz4wnGnIt2Vyhq0z6YR6bPAM+17d9erQ5LcNP4bOVwC9+W9NPsJYb/jipZARXvzqrVkl71OyUP95NL/lPRKj/q9fY4MbBvpBAIQcubakaKlGTxGS+jBybAQyJ17e0rAszkk4MQCrtPAaRhZUYjViQ6VDQ3V+nXFSjLXVUGLnjJLWmJWzCq0Pl1c5MDtTJiTQoMmyv/mW9wVWDqQ9wkA8xV6bggiFzqasl+j0BJstY9bOF0PoXZ6Q4leRXU7oWRBhYbfm11NSkzx6ecD9YCCTdSgbA+FV1cPQNj571ADl8e4Axitee2KnsEDW1SlkWAi5OABoOA4Cq0CWkn3bJBBC8ZSgo8UQVlZUHiM0W8xHH2ZIq/bv3u4Wg2cDc8kVWvx2730xhNXU6zawc9trd6L9AKHm9X1NXbafDfeEgud0HRogQcTqmxoxDtOVIIUwrD2n9auYaCy0ezJ9/3BYD3FIiu9v9hOujcciOsP0EVo4/SsTxyHDXgxtObOtz54EZIf1VVupxUseIaL56tv2SAZ0bQHQm7+Rxc6w9DdP0xsEHz8k8kazfZNziKZvXt0dZVNQFb1awDrGcBqCCAOL1d+0e9uuyzWFYTLQzqTHev4oH00zJ0c83KVqI0JZTM5YFkUYvoIua6v9zoLOB+WRjZ4j+4N3EKpm9oQfbUj3BEDQmx+l9B91lmxLV5/GM2Qdp8Uwfoq/OP+oV+9J8LmY2o0gQ3sH4npXR5+W21juX2foCCWGrXS3R9lhtnuhXnTvSDdprs4v2e66wEAIoSzrvrm5msBVqWmyjUxzlR7XW96LtuNMKBHlFMDYCyFk7yH1VfN9vrUcga5Ee+L4+vRphWPRYnXFM4At5DhYun7KRe+b4B6gDoNBjIDQh8TJc2mF1og8b/g0XZcpEXfqFe5kPS2+5E8hpeGg3ny1Mk05T9A2LrxrMRgULvEr0mnqpr24wQ4sW+51k/kVGccTHhho5oz9xaw1tXcrI3Zxh/COnkYzOO084MC2VN+uJneIHQMzDpLCODcaPGISiFIaCMjrbgBfJED45rMY5BEIneChqO/765dAUxZrfx18KccgVBSmnCJ6+sxoAQ1cPIsPRq4A4WGa8jr7ZwMhJ8elczRCbcOwbbJSjjmCYw3uwgc+4elnOstKoES6pBKJC9wf14esLSt4wj6NgBNMCcvmV45Qbnna6jmYXmMlYqDBCQib78UiYpiVackFaNyYEIPPIAwfE6z3RuOtE848buzRPA6hohTHlrFlZOZ3Jrz9SQv9TAj1cH5VzdEiGJTG/UkIm4yQIVXTMqK3NTeoMfdBBieeB5wgDP8MBpOvPi6m8Yc/Qh8eyCumslmUWyag+zHXnjJsU8szAPQhr0KrxjhYT8+aNdV8s+zOwvl7JAOWmUIXpn3aGfwFs7X2OAxIBLwKreQpnemlbLykgsjyyRYtb6KDmYVF0PSgeTxl+Pd0VupvIPQngwF3z4zMPof08wgJ019fsQCgWf/nz11/fYcEDkTCSx6DU05arRRh84G5G9uwXNcCIjA5SnfeXypCHUr+ESU097gMvhxhk3NAhwgZZFWsi0TI3WssQLbl8xl8e4R48kmEZ9EWVSJEK10cIdNPw7FHCITJJRJhQpCfphKEwVpL4TMgEJxmtZWD4FptDd6iQaQLxy0Wg9O8GAUR1sXMFp7l/XmEP0oZZAi+CCH31LFyhNrFI/SOyMAq0uEAkstG2AITmsW6cHT5CJfARkkxOqyWLxzh42eisfhQMPnCEXZ6W+PkRJQoN7oqhPE19XiEPLsoYPCwml67p0Rjk9JtDAYAQkY1M714qck+WA++s6xZqyX76n48A6IFHLJnh/qrjFdrMC/VaLXlGQSyr26eethBYqvepAunCsCgbM9MnWsL8k5vM59IiHcQMk3u3hNn8OUIYwbKZt63kVjGjXF7r30/hFFPXq8dASXi9NXjGFwKwpbmm5v29AaXKRE0974pQvUQjTXfehPEm1/DsvnfF2FIvqKaT7sZ6DLFE/VIBpeG8JA56XX2Y5edIoHm+rEIv04f8hk0N3/R0dhISKV3DWQA6MMvsmlKGejB1PMeRmOpcyzwi9c6ksFX2aUiDII/PHM/3oZ5RDFZUw4Dpl36VX6aIxjoZntxl8TVs9OOL3v1dCwDT2331mEeSFw2/89DKCuBpmyPXiU0Tm/9wxBG5oC6mWd1+P48hIdGpzD4VggVhWFv/FkIWRbVebJNyq2KkrhF4U4WA7nYjGFRlcYtGF/x/NG14vc/H4OvQVgng/8DDCYeqsJpJhsAAAAASUVORK5CYII="
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- header -->
+     <header class="header">
+        <nav class="navbar">
+            <div class="left-nav">
+                <p>Book<span>My</span>Show</p>
+                <div class="search-bx">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder=" Search for Movies,Event,Plays,sport and Activities">
+                </div>
+            </div>
+            <div class="right-nav">
+                <ul>
+                    <li>vadodara</li>
+                    <li><button>Sign in</button></li>
+                    <li><i class='bx bx-menu'></i></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!-- second navbar -->
+         <div class="sub-navbar">
+            <div class="left-link">
+                <a href="">Movies</a>
+                 <a href="">Events</a>
+                  <a href="">Sports</a>
+                   <a href="">Plays</a>
+                    <a href="">Stream</a>
+                     <a href="">Activities</a>
+            </div>
+            <div class="right-link">
+                <a href="">ListYourShow</a>
+                <a href="">Corporates</a>
+                <a href="">Offers</a>
+                <a href="">Gift Cards</a>
+            </div>
+         </div>
+     </header>
+     <hr>
+
+        <!-- Hero Section -->
+     <section class="hero">
+        <div class="poster">
+            <img src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1778912523150_sardarweb.jpg" alt="">
+            </div>
+            <div class="movie-cards">
+                <div class="info">
+                    <h2>Recommended Movies</h2>
+                <p>See all</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="https://i.pinimg.com/736x/64/15/cb/6415cb69f4651186cd0d6e55037da48f.jpg" alt="">
+                        <div class=" card-text">
+                            <i class='bx bx-like'></i>
+                            <span>513K+views</span>
+                        </div>
+                        <div class="card-info">
+                        <h3>Kalki</h3>
+                        <span>Action/Sci-fi</span>
+
+                    </div>
+                    </div>
+
+                     <div class="card">
+                        <img src="https://m.media-amazon.com/images/I/81vRg6RVaFL.jpg" alt="" height="390px">
+                        <div class=" card-text">
+                            <i class='bx bx-like'></i>
+                            <span>513K+views</span>
+                        </div>
+                        <div class="card-info">
+                        <h3>Joker</h3>
+                        <span>Crime/Thriller</span>
+                        <p></p>
+                    </div>
+                    </div>
+
+
+                     <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQugNSHcIitXa9NIH0UIJOUhDwYKGtk58tomA&s" alt="" height="390px">
+                        <div class=" card-text">
+                            <i class='bx bx-like'></i>
+                            <span>513K+views</span>
+                        </div>
+                        <div class="card-info">
+                        <h3>Harry Potter</h3>
+                        <span>Fantasy/Action/Adventure/Family</span>
+
+                    </div>
+                    </div>
+
+
+                     <div class="card">
+                        <img src="https://pixeldemonmg.co.uk/cdn/shop/files/flow-movie-poster_2247ced3-895d-47c1-96b4-e91bdc11de51.jpg?v=1732058041&width=1214" alt="" height="390px">
+                        <div class=" card-text">
+                            <i class='bx bx-like'></i>
+                            <span>513K+views</span>
+                        </div>
+                        <div class="card-info">
+                        <h3>Flow</h3>
+                        <span>Adventure/Fantasy</span>
+
+                    </div>
+                    </div>
+
+
+                     <div class="card">
+                        <img src="https://vice-press.com/cdn/shop/files/the-big-lebowski-editions-movie-poster-matt-ferguson.jpg?v=1762876402&width=1024" alt="" height="390px">
+                        <div class=" card-text">
+                            <i class='bx bx-like'></i>
+                            <span>513K+views</span>
+                        </div>
+                        <div class="card-info">
+                        <h3>The Big Lebowski</h3>
+                        <span>Comedy</span>
+
+                    </div>
+                    </div>
+            </div>
+     </section>
+
+       <section class="image">
+    <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png" alt="">
+  </section>
+
+  <section class="events">
+    <h2>The Best Of Live Events</h2>
+    <div class="event-card">
+      <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MjUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png" alt="">
+      <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NiBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/amusement-parks-banner-desktop-collection-202503251132.png" alt="">
+      <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NSBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/kids-banner-desktop-collection-202503251132.png" alt="">
+      <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png" alt="">
+      <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NSBFdmVudHM%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png" alt="">
+    </div>
+  </section>
+
+
+     <section class="artist">
+    <h2>Artist in your BookMyShow</h2>
+    <div class="artist-card">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom,q_auto/v1779272175/qc5xbqigumbvec4bl1w2.jpg" alt="">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom,q_auto/v1777536623/ogn5fkljkvanltt4pkui.jpg" alt="">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1767783193/fktxyamgix3dubr7ikaz.png" alt="">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1751447578/a5cd81b6knh2v0kjuh6u.jpg" alt="">
+      <img src="https://media.insider.in/image/upload/c_crop,g_custom/v1758264530/qott63ml1d54jwxq6ysm.png" alt="">
+    </div>
+  </section>
+
+
+    <footer>
+    <div class="footer">
+        <h2>BookMyShow</h2>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+        <p>Contact Us</p>
+        <p>List Your Events</p>
+    </div>
+    <hr>
+    <div class="foot">
+        <p>
+            By accessing this page, you confirm that you have read,
+            understood and agreed to our Terms of Service, Cookie Policy,
+            Privacy Policy and Content Guidelines. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+  </body>
+</html>
